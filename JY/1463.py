@@ -4,7 +4,6 @@ input = sys.stdin.readline
 n = int(input())
 
 d = [0] * 1000001
-
 # 다이나믹 프로그래밍 진행(bottom-up)
 for i in range(2, n+1):
     # 현재의 수에서 1을 빼는 경우
