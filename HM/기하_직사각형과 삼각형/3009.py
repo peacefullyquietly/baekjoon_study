@@ -26,3 +26,5 @@ for i in range(2):
     else: D.append(A[i])
 
 print(" ".join(str(i) for i in D))
+
+#flkjlkjfds
