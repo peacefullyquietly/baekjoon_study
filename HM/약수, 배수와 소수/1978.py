@@ -1,6 +1,6 @@
 
-N=int(input())
-list = map (int, input().split())
+N=int(input()) 
+list = map(int, input().split())
 count =0;
 
 for i in list:

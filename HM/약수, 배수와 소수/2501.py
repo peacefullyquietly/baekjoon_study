@@ -15,15 +15,15 @@ else: print(0)
 
 
 # 다른 풀이
-# arr=[]
-# N, K = map(int, input().split())
-# cnt = 0
-# for i in range(1, N + 1):
-#     if N % i == 0:
-#         arr.append(i)
-#     cnt += 1
+arr=[]
+N, K = map(int, input().split())
 
-# if K > len(arr):
-#     print(0)
-# else:
-#     print(arr[K-1])
+for i in range(1, N + 1):
+    if N % i == 0:
+        arr.append(i)
+
+
+if K > len(arr):
+    print(0)
+else:
+    print(arr[K-1])

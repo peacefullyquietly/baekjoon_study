@@ -10,8 +10,7 @@ while True:
                 list.append(i)
 
         if sum(list)==n:
-            print(n," = ", " + ".join(str(j) for j in list), sep="")
+            print(n," = ", " + ".join(str(j) for j in list))
         else :
             print(n, "is NOT perfect.")
 
- 

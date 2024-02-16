@@ -1,21 +1,19 @@
 import sys
+from collections import defaultdict
 input = sys.stdin.readline
 
-N = int(input())
-center = ""
-user = dict()
-for i in range(N):
-    a, b = map(str, input().split())
-    if a in user:
-        user[a] += [b]
-    else:
-        user[a] = [b]
-    if b in user:
-        user[b] += user[a]
-    else:
-        user[b] = user[a]
-# print(user)
+dance = defaultdict(bool)
+dance['ChongChong'] = True
+ans = 1
 
-rainbow_dance = set()
-print(set(user["ChongChong"]))
-print(len(set(user["ChongChong"])))
+for i in range(int(input())):
+    a, b = map(str, input().split())
+    if dance[a]:
+        if not dance[b]:
+            dance[b] = True
+            ans += 1
+    elif dance[b]:
+        dance[a] = True
+        ans += 1
+
+print(ans)

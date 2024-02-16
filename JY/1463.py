@@ -1,19 +1,19 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input())
+N = int(input())
 
-d = [0] * 1000001
-# 다이나믹 프로그래밍 진행(bottom-up)
-for i in range(2, n+1):
-    # 현재의 수에서 1을 빼는 경우
-    d[i] = d[i-1] + 1
-    # 현재의 수가 2로 나누어 떨어지는 경우
+dp = [0]*(N+1)
+dp[1] = 0
+
+for i in range(2, N+1):
+    dp[i] = dp[i-1] + 1
     if i % 2 == 0:
-        d[i] = min(d[i], d[i//2] + 1)
-    # 현재의 수가 3으로 나누어 떨어지는 경우
+        # dp[i//2] + 1이 dp[i]보다 작으면 변경.
+        dp[i] = min(dp[i], dp[i//2] + 1)
     if i % 3 == 0:
-        d[i] = min(d[i], d[i//3] + 1)
+        # dp[i//3] + 1이 dp[i]보다 작으면 변경.
+        # 위에 i % 2 부분에서 변경됐으면 바뀐거랑 또 비교하게 됨
+        dp[i] = min(dp[i], dp[i//3] + 1)
 
-# 결과 출력
-print(d[n])
+print(dp[N])
