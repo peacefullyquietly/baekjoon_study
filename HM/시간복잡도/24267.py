@@ -9,5 +9,3 @@ for j in range(i+1, n):
 result= result* (n(n+1)/2-7)        
 print(result)
 print(3)
-
-#몬냐 몬냐
