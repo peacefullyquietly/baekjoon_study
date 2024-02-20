@@ -16,9 +16,8 @@ idx_arr=sorted(list(set(arr)))
 
 # for i in arr:
 #     print(orderd.index(i),end=" " )
-         
+      #해시값   
 dic ={idx_arr[i]: i for i in range(len(idx_arr)) }
-# 999: 0
-# 1000:1
+
 for i in arr:
     print(dic[i], end=' ')

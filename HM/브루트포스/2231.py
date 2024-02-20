@@ -20,7 +20,7 @@
 # print(sum)
        
 # 3
-N = int(input())
+N = int(input()) 
 # total=0
 for i in range(1, N):
     nums =list(str(i))
