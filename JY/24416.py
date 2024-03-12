@@ -7,11 +7,6 @@ def fib(n):
     for i in range(3, n+1):
         a, b = b, a+b
     return b"""
-
-    # 바텀-업 (좀 더 안전한 방식)
-    """for i in range(2, N+1) :
-            dp[i] = dp[i-2] + dp[i-1] # 반복문을 이용하여 아래서부터 값을 채워가는 방식
-    """
     # 탑-다운
     if dp[n] != -1:  # 기존에 계산한 부분의 문제는 재계산하지 않고 리턴
         return dp[n]
@@ -23,6 +18,11 @@ def fib(n):
 def fibonacci(n):
     return n - 2
 
+
+# 바텀-업 (좀 더 안전한 방식)
+"""for i in range(2, N+1) :
+        dp[i] = dp[i-2] + dp[i-1] # 반복문을 이용하여 아래서부터 값을 채워가는 방식
+"""
 
 n = int(input())
 dp = [-1]*(n+1)
