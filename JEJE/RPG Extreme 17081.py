@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 class Box:
     def __init__(self, type :str, value :int|str):
         self.box_type = type

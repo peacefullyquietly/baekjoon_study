@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 use std::io::{stdin, Read, stdout, Write, BufWriter};
 
 fn find(start: usize, list: &Vec<Vec<usize>>, visited: &mut Vec<bool>, dp: &mut Vec<usize>) -> usize{

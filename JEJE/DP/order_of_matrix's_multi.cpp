@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 #include<iostream>
 #define MAX 501
 #define INF ~(1u << (sizeof(int) * 8 - 1));

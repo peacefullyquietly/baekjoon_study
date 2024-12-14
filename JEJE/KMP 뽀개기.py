@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 # None
 #와! 파이썬 오랜만이야
 #난 그렇게 원서 접수하고 1차합을 기다리고 있어!!

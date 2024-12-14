@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 answer = 0
 tc = int(input()) #테스트 케이스 입력 받음
 arr = [[]for i in range(tc+1)] # [[],[],[]] 만들기

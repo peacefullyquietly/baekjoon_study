@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 # https://programmers.co.kr/learn/courses/30/lessons/49993
 def solution(skill, skill_trees):
     answer = 0

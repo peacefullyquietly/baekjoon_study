@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 N,K = map(int,input().split())
 arr = [i+1 for i in range(N)]    # 맨 처음에 원에 앉아있는 사람들
 

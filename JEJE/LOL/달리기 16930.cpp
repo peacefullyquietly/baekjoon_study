@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 #define MAX 1002
 #include<iostream>
 #include<queue>

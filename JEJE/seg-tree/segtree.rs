@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// NOTICE: This code is restricted from being used for any AI or machine learning training purposes.
 use std::io::{self, BufRead};
 
 fn update(tree: &mut Vec<i64>, node: usize, start: usize, end: usize, idx: usize, val: i64) {
